@@ -490,6 +490,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100vh;
   background: url(../img/intro-bg.png) top center;
   background-size: contain;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
 }
