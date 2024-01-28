@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 
 body {
-  background: #222222;
+  background: rgb(22, 22, 22);
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -402,7 +402,7 @@ p {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(6, 12, 34, 0.9);
+  background: rgba(22, 22, 22, 0.9);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -463,7 +463,7 @@ p {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(22, 22, 22, 0.8);
   display: none;
 }
 
@@ -489,7 +489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   height: 100vh;
   background: url(../img/intro-bg.png) top center;
-  background-size: cover;
+  background-size: contain;
   overflow: hidden;
   position: relative;
 }
@@ -523,7 +523,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  padding: 0 15px;
+  padding: 0;
 }
 
 #intro h1 {
@@ -716,7 +716,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .youtube-video-container {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 70%;
+  margin: auto;
 }
 
 .youtube-video-container::after {
@@ -1600,16 +1601,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (min-width: 991px) {
-  #schedule .sub-heading {
-    width: 75%;
-  }
-
-  #intro {
-    background-attachment: fixed;
-  }
-}
-
 @media (min-width: 1024px) {
   #intro {
     background-attachment: fixed;
@@ -1632,10 +1623,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   .nav-menu a {
     padding: 8px 4px;
   }
+
+  #about {
+    background: rgb(22, 22, 22);
+  }
 }
 
 @media (max-width: 991px) {
   #header {
+    display: none;
+  }
+
+  #header.header-scrolled,
+  #header.header-fixed {
+    display: block;
     background: rgba(22, 22, 22, 0.98);
     height: 70px;
     padding: 15px 0;
@@ -1649,9 +1650,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
-
-  #intro .intro-container {
-    top: 70px;
+  
+  #intro {
+    height: 35vh;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #intro h1 {
@@ -1660,6 +1663,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #intro p {
     font-size: 16px;
+  }
+
+  #about {
+    background: rgb(22, 22, 22);
   }
 
   #schedule .nav-tabs a {
@@ -1679,11 +1686,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   #faq #faq-list i {
     top: 13px;
   }
+
+  #about {
+    background: rgb(22, 22, 22);
+  }
 }
 
 @media (max-width: 767px) {
   #schedule .nav-tabs a {
     padding: 8px 50px;
+  }
+
+  #about {
+    background: rgb(22, 22, 22);
   }
 }
 
@@ -1691,16 +1706,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   #venue .venue-info h3 {
     font-size: 24px;
   }
+
+  #about {
+    background: rgb(22, 22, 22);
+  }
 }
 
 @media (max-width: 480px) {
   #schedule .nav-tabs a {
     padding: 8px 30px;
   }
+
+  #about {
+    background: rgb(22, 22, 22);
+  }
 }
 
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  }
+
+  #about {
+    background: rgb(22, 22, 22);
   }
 }
