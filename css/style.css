@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 
 body {
-  background: rgb(22, 22, 22);
+  background: #141414;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -144,7 +144,7 @@ p {
 }
 
 .section-with-bg {
-  background-color: #27374D;
+  background-color: #141414;
 }
 
 /*--------------------------------------------------------------
@@ -955,6 +955,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 60px;
 }
 
+#promoter img {
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 #venue .venue-info:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
@@ -1270,6 +1278,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card hr {
   margin: 25px 0;
 }
+
+hr.solid {
+  border-top: 1px solid #bbb;
+  margin: 0 50px;
+}
+
 
 #buy-tickets .card .card-title {
   margin: 10px 0;
