@@ -1602,6 +1602,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .sub-heading {
     width: 75%;
   }
+
+  #intro {
+    background-attachment: fixed;
+  }
 }
 
 @media (min-width: 1024px) {
