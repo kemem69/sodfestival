@@ -716,7 +716,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .youtube-video-container {
   position: relative;
   overflow: hidden;
-  width: 70%;
+  width: 40%;
   margin: auto;
 }
 
@@ -1612,6 +1612,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #subscribe {
     background-attachment: fixed;
+  }
+
+  .youtube-video-container {
+    margin-top: 20px;
+    width: 70%;
   }
 }
 
