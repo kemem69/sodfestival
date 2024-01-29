@@ -1628,11 +1628,6 @@ hr.solid {
   #subscribe {
     background-attachment: fixed;
   }
-
-  .youtube-video-container {
-    margin-top: 20px;
-    width: 70%;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -1646,6 +1641,11 @@ hr.solid {
 
   #about {
     background: rgb(22, 22, 22);
+  }
+
+  .youtube-video-container {
+    margin-top: 20px;
+    width: 70%;
   }
 }
 
