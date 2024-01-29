@@ -1751,3 +1751,8 @@ hr.solid {
     background: rgb(22, 22, 22);
   }
 }
+
+.img-ytb {
+  width: 80%;
+  margin-top: 15px;
+}
