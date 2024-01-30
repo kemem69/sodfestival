@@ -1647,6 +1647,11 @@ hr.solid {
     margin-top: 20px;
     width: 70%;
   }
+  
+  #intro {
+    background: url(../img/intro-mob.jpg) top center;
+    background-size: cover
+  }
 }
 
 @media (max-width: 991px) {
@@ -1669,12 +1674,6 @@ hr.solid {
 
   #mobile-nav-toggle {
     display: inline;
-  }
-  
-  #intro {
-    height: 35vh;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   #intro h1 {
