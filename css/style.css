@@ -1755,3 +1755,7 @@ hr.solid {
   width: 80%;
   margin-top: 15px;
 }
+
+.btn {
+  background-color: #ddd;
+}
