@@ -41,12 +41,23 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: TheEvent
-    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '405208281989892');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=405208281989892&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -169,7 +180,8 @@
         </div>
 
         <div class="text-center ticket">
-          <button type="button" class="btn" id="buyticket" style="margin: 15px 0;" onclick="location.href='https://widget.loket.com/widget/yho1uzg57mjhrpj2p'"><span style="color: rgb(22,22,22);">Buy
+          <button type="button" class="btn" id="buyticket" style="margin: 15px 0;" 
+          ><span style="color: rgb(22,22,22);">Buy
                 Tickets</span></button>
           <p>Tickets will be available at</p>
           <p>2 February 2024 at 9 a.m</p>
@@ -881,6 +893,12 @@
     let openDate = new Date('2024-02-02 09:00:00')
     // Insert date and time into HTML
     document.getElementById("buyticket").disabled = now<openDate;
+  </script>
+  <script type="text/javascript">
+    $('#buyticket').click(function() {
+      fbq('track', 'Purchase', {currency: "IDR", value: 1000000.00});
+      location.href='https://widget.loket.com/widget/yho1uzg57mjhrpj2p';
+    });
   </script>
 </body>
 
