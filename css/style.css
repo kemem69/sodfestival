@@ -1623,3 +1623,7 @@ hr.solid {
 .countdownMap {
   margin-top: -40px;
 }
+
+audio {
+  opacity: 0.5;
+}
