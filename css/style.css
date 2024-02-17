@@ -194,7 +194,7 @@ h5 {
 #promoter {
   padding-top: 60px;
   padding-bottom: 30px;
-  background-color: rgb(176, 176, 176);
+  background-color: white;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -605,7 +605,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background-color: rgb(176, 176, 176);
+  background-color: white;
   color: #DDE6ED;
   padding: 60px 0 40px 0;
   text-align: center;
@@ -624,7 +624,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #DDE6ED;
+  color: black;
 }
 
 #about h3 {
@@ -632,13 +632,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #DDE6ED;
+  color: black;
 }
 
 #about p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #DDE6ED;
+  color: black;
 }
 
 .youtube-video-container {
@@ -666,7 +666,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #DDE6ED;
+  color: black;
 }
 
 #gallery h3 {
@@ -878,7 +878,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue {
   padding: 60px 0;
-  background-color: rgb(176, 176, 176);
+  background-color: white;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -894,7 +894,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery{
-  background-color: rgb(176, 176, 176);
+  background-color: white;
 }
 #venue .venue-info:before {
   content: "";
@@ -1336,13 +1336,13 @@ hr.solid {
 --------------------------------------------------------------*/
 
 #footer {
-  background-color: rgb(176, 176, 176);
+  background-color: white;
   padding: 0 0 25px 0;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background-color: rgb(176, 176, 176);
+  background-color: white;
   padding: 60px 0 30px 0;
 }
 
@@ -1357,7 +1357,7 @@ hr.solid {
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #DDE6ED;
+  color: black;
 }
 
 #footer .footer-top .footer-info img {
@@ -1370,7 +1370,7 @@ hr.solid {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #DDE6ED;
+  color: black;
 }
 
 #footer .footer-top .social-links a {
@@ -1396,7 +1396,7 @@ hr.solid {
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #DDE6ED;
+  color: black;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
