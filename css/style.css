@@ -37,12 +37,18 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
+  padding: 0;
+  color: #DDE6ED;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   padding: 0;
   color: #DDE6ED;
 }
@@ -186,7 +192,8 @@ p {
 }
 
 #promoter {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 #header #logo h1 a,
@@ -1146,6 +1153,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #buy-tickets {
   padding: 60px 0;
+}
+
+.nostalgia {
+  width: 18rem;
+  border-radius: 10px;
+  box-shadow: rgba(118, 109, 115, 0.4) 0px 5px, rgba(107, 103, 106, 0.3) 0px 10px, rgba(192, 188, 190, 0.2) 0px 15px, rgba(198, 196, 197, 0.1) 0px 20px, rgba(226, 226, 226, 0.05) 0px 25px;
+}
+
+.logo {
+  width: 100px;
 }
 
 #buy-tickets .card {
