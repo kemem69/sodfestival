@@ -43,14 +43,14 @@ p {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #DDE6ED;
+  color: #323232;
 }
 
 h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   padding: 0;
-  color: #DDE6ED;
+  color: #323232;
 }
 
 .main-page {
@@ -150,7 +150,7 @@ h5 {
 }
 
 .section-with-bg {
-  background-color: #141414;
+  background-color: rgb(176, 176, 176);
 }
 
 /*--------------------------------------------------------------
@@ -194,6 +194,11 @@ h5 {
 #promoter {
   padding-top: 60px;
   padding-bottom: 30px;
+  background-color: rgb(176, 176, 176);
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 #header #logo h1 a,
@@ -598,7 +603,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background-color: white;
+  background-color: rgb(176, 176, 176);
   color: #DDE6ED;
   padding: 60px 0 40px 0;
   text-align: center;
@@ -871,6 +876,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue {
   padding: 60px 0;
+  background-color: rgb(176, 176, 176);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 #venue .container-fluid {
@@ -883,24 +891,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   min-height: 300px;
 }
 
-#venue{
-  background-color: white;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 #gallery{
-  background-color: white;
+  background-color: rgb(176, 176, 176);
 }
-
-#promoter{
-  background-color: white;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
 #venue .venue-info:before {
   content: "";
   background: rgba(8, 0, 73, 0.8);
@@ -1341,13 +1334,13 @@ hr.solid {
 --------------------------------------------------------------*/
 
 #footer {
-  background-color: white;
+  background-color: rgb(176, 176, 176);
   padding: 0 0 25px 0;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background-color: white;
+  background-color: rgb(176, 176, 176);
   padding: 60px 0 30px 0;
 }
 
