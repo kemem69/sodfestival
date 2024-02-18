@@ -1143,14 +1143,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .nostalgia {
-  width: 18rem;
+  width: 100%;
+  cursor: pointer;
   border-radius: 10px;
   box-shadow: rgba(118, 109, 115, 0.4) 0px 5px, rgba(107, 103, 106, 0.3) 0px 10px, rgba(192, 188, 190, 0.2) 0px 15px, rgba(198, 196, 197, 0.1) 0px 20px, rgba(226, 226, 226, 0.05) 0px 25px;
 }
 
 .logo {
   max-width: 100px;
-  height: max-content;
+  height: auto;
   margin: auto;
 }
 
@@ -1640,4 +1641,9 @@ hr.solid {
 
 .galeri {
   overflow: hidden;
+  margin-top: 40px;
+}
+
+.card-img-top {
+  width: 100%;
 }
