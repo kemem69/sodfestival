@@ -1,18 +1,25 @@
-/*
-  Theme Name: TheEvent
-  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+@font-face {
+  font-family: 'rowdiesLight';
+  src: url("../font/Rowdies-Light.ttf") format('truetype');
+  font-weight: lighter;
+}
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'rowdiesRegular';
+  src: url("../font/Rowdies-Regular.ttf") format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'rowdiesBold';
+  src: url("../font/Rowdies-Bold.ttf") format('truetype');
+  font-weight: bold;
+}
 
 body {
   background: #141414;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'rowdiesRegular';
 }
 
 a {
@@ -127,11 +134,16 @@ h5 {
 }
 
 .section-header h2 {
-  font-size: 36px;
+  font-size: 40px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
+  font-family: 'rowdiesBold';
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 3px;
+  text-shadow: 3px 3px black;
 }
 
 .section-header p {
@@ -174,17 +186,6 @@ h5 {
   height: 80px;
   padding: 10px 0;
   transition: all 0.5s;
-}
-
-#header #logo h1 {
-  font-size: 36px;
-  margin: 0;
-  padding: 6px 0;
-  line-height: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 #header #logo h1 span {
@@ -291,8 +292,8 @@ h5 {
   text-decoration: none;
   display: inline-block;
   color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: 'rowdiesRegular';
+  font-weight: 400;
   font-size: 16px;
   outline: none;
 }
@@ -1362,7 +1363,7 @@ hr.solid {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: 'rowdiesRegular';
   font-weight: 700;
   color: black;
 }
@@ -1376,7 +1377,7 @@ hr.solid {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'rowdiesRegular';
   color: black;
 }
 
@@ -1645,4 +1646,33 @@ hr.solid {
 
 .card-img-top {
   width: 100%;
+}
+
+#timeandplace {
+  background-color: #009a5e;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: max-content;
+  margin: auto;
+  border: 3px black solid;
+  box-shadow: 2px 2px black;
+}
+
+#timeandplace h3 {
+  font-family: 'rowdiesBold';
+  color: white;
+}
+
+#about-header {
+  margin-bottom: 20px;
+}
+
+#about-header::before {
+  display: none;
+}
+
+.countdown-box {
+  
 }
