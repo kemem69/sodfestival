@@ -1598,6 +1598,29 @@ hr.solid {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
+
+  .countdownBox {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .countdownBox h1 {
+    font-size: 2vw;
+  }
+  
+  .countdownBottomBox {
+    margin-top: 5px !important;
+  }
+  
+  .countdownBottomBox p {
+    font-size: 2vw !important;
+  }
+  
+  .titikkoma {
+    margin-top: 0px !important;
+  }
 }
 
 @media (max-width: 574px) {
@@ -1676,7 +1699,7 @@ hr.solid {
 .countdownBox h1 {
   margin: auto;
   font-family: 'rowdiesBold';
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .countdownBottomBox {
@@ -1690,7 +1713,7 @@ hr.solid {
 .countdownBottomBox p {
   margin: auto;
   font-family: 'rowdiesLight';
-  font-size: 2rem;
+  font-size: 2vw;
   margin-bottom: 10px !important;
 }
 
