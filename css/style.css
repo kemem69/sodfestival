@@ -1578,10 +1578,6 @@ hr.solid {
   #schedule .nav-tabs a {
     padding: 8px 60px;
   }
-
-  .countdownMap {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1631,15 +1627,6 @@ hr.solid {
   background-color: #ddd;
 }
 
-#countdown {
-  font-size: 10vw !important;
-  font-weight: bold;
-}
-
-.countdownMap {
-  margin-top: -40px;
-}
-
 .galeri {
   margin-top: 40px;
 }
@@ -1653,7 +1640,7 @@ hr.solid {
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   width: max-content;
   margin: auto;
   border: 3px black solid;
@@ -1663,6 +1650,7 @@ hr.solid {
 #timeandplace h3 {
   font-family: 'rowdiesBold';
   color: white;
+  font-size: 12px;
 }
 
 #about-header {
@@ -1673,6 +1661,44 @@ hr.solid {
   display: none;
 }
 
-.countdown-box {
-  
+#countdownContainer {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.countdownBox {
+  border: 3px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.countdownBox h1 {
+  margin: auto;
+  font-family: 'rowdiesBold';
+  font-size: 3rem;
+}
+
+.countdownBottomBox {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #fd5a47;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.countdownBottomBox p {
+  margin: auto;
+  font-family: 'rowdiesLight';
+  font-size: 2rem;
+  margin-bottom: 10px !important;
+}
+
+.titikkoma p {
+  font-family: 'rowdiesBold';
+  font-size: 3rem !important;
+}
+
+.titikkoma {
+  margin-top: 10px;
 }

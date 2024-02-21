@@ -93,30 +93,58 @@
         <div id="timeandplace">
           <h3>3 & 4 Agustus 2024 | Surabaya, Jawa Timur</h3>
         </div>
-        <p id="countdown"></p>
-        <div class="row">
-          <div class="col-lg-4">
-            <p class="countdownMap">Days</p>
+        <div class="row" id="countdownContainer">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="countdownBox">
+              <h1 id="days"></h1>
+            </div>
+            <div class="countdownBottomBox">
+              <p class="countdownMap">Days</p>
+            </div>
           </div>
-          <div class="col-lg-2">
-            <p class="countdownMap">Hours</p>
+          <div class="col-lg-1 titikkoma">
+            <p>:</p>
           </div>
-          <div class="col-lg-2">
-            <p class="countdownMap">Minutes</p>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="countdownBox">
+              <h1 id="hours"></h1>
+            </div>
+            <div class="countdownBottomBox">
+              <p class="countdownMap">Hours</p>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <p class="countdownMap">Seconds</p>
+          <div class="col-lg-1 titikkoma">
+            <p>:</p>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="countdownBox">
+              <h1 id="minutes"></h1>
+            </div>
+            <div class="countdownBottomBox">
+              <p class="countdownMap">Minutes</p>
+            </div>
+          </div>
+          <div class="col-lg-1 titikkoma">
+            <p>:</p>
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="countdownBox">
+              <h1 id="seconds"></h1>
+            </div>
+            <div class="countdownBottomBox">
+              <p class="countdownMap">Seconds</p>
+            </div>
           </div>
         </div>
-        <h1 id="datetime"></h1>
-        <div>
-          <h3>EARLY BIRD - <s style="color:red">149.900</s> (SOLD OUT)</h3>
-          <h3>PRESALE 1 - <s style="color:red">749.900</s> (SOLD OUT)</h3>
-          <h3>PRESALE 2 - 209.900</h3>
-          <p>Tiket Presale 2 akan tersedia pada Sabtu, 2 Maret 2024 - 16.00 WIB</p>
-          <h3>PRESALE 3 - 249.900</h3>
-          <p>Tiket Presale 2 akan tersedia pada Minggu, 3 Maret 2024 - 16.00 WIB</p>
-          <!-- <div class="text-center ticket">
+      </div>
+      <div>
+        <h3>EARLY BIRD - <s style="color:red">149.900</s> (SOLD OUT)</h3>
+        <h3>PRESALE 1 - <s style="color:red">749.900</s> (SOLD OUT)</h3>
+        <h3>PRESALE 2 - 209.900</h3>
+        <p>Tiket Presale 2 akan tersedia pada Sabtu, 2 Maret 2024 - 16.00 WIB</p>
+        <h3>PRESALE 3 - 249.900</h3>
+        <p>Tiket Presale 2 akan tersedia pada Minggu, 3 Maret 2024 - 16.00 WIB</p>
+        <!-- <div class="text-center ticket">
                   <button type="button" class="btn" id="buyticket" style="margin: 15px 0;" 
                   ><span style="color: rgb(22,22,22);">Buy
                         Tickets</span></button>
@@ -124,7 +152,7 @@
                   <p>2 February 2024 at 9 a.m</p>
                   <p>(GMT +7 / Jakarta Local Time)</p>
                 </div> -->
-        </div>
+      </div>
       </div>
     </section>
     <hr class="solid">
@@ -215,7 +243,8 @@
             yang diselenggarakan oleh SOD Group. Menjelang penyelenggaraan yang ke-6 pada 3 & 4 Agustus 2024,
             kami memiliki visi untuk menjadikan SOD Festival Vol.6 sebagai “Festival Musik Untuk Semua Warga Jawa Timur”
           </h5><br>
-          <h5>Selain menyelenggarakan SOD Festival, saat ini SOD Group juga sedang membangun sebuah ekosistem di industri kreatif & pertunjukan melalui beberapa brand lain yang kami miliki</h5><br>
+          <h5>Selain menyelenggarakan SOD Festival, saat ini SOD Group juga sedang membangun sebuah ekosistem di
+            industri kreatif & pertunjukan melalui beberapa brand lain yang kami miliki</h5><br>
           <div class="row justify-content-around logo-promoter" style="margin-top: 40px;">
             <img class="logo" src="img/logo/SODGROUP/sod.png" alt="SOD Group" title="">
             <img class="logo" src="img/logo/SODFestival/sod.png" alt="SOD Festival" title="">
@@ -337,12 +366,17 @@
       if (Number(seconds) < 10) {
         seconds = "0" + seconds;
       }
-      document.getElementById("countdown").innerHTML = days + " : " + hours + " : "
-        + minutes + " : " + seconds;
       if (distance < 0) {
         clearInterval(down);
-        document.getElementById("demo").innerHTML = "0 : 0 : 0 : 0";
+        document.getElementById("days").innerHTML = 0;
+        document.getElementById("hours").innerHTML = 0;
+        document.getElementById("minutes").innerHTML = 0;
+        document.getElementById("seconds").innerHTML = 0;
       }
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
     }, 1000);
   </script>
 </body>
