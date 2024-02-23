@@ -42,33 +42,22 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '307748501929696');
-    fbq('track', 'PageView');
+  <!-- <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '405208281989892');
+  fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=307748501929696&ev=PageView&noscript=1" /></noscript>
+  src="https://www.facebook.com/tr?id=405208281989892&ev=PageView&noscript=1"
+  /></noscript> -->
   <!-- End Meta Pixel Code -->
-
-  <!-- Tiktok Pixel Code -->
-  <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
-      ttq.load('CNBO9OJC77UAH7T91PD0');
-      ttq.page();
-    }(window, document, 'ttq');
-  </script>
 </head>
 
 <body>
@@ -149,12 +138,52 @@
         </div>
       </div>
       <div>
-        <h3>EARLY BIRD - <s style="color:red">149.900</s> (SOLD OUT)</h3>
+        <div class="container mt-5">
+          <div class="row justify-content-center ticket-card">
+            <div class="col-3">
+              <div class="card text-center card-main"> 
+                <div class="card-header bg-secondary p-2"><h4 style="color: darkgrey;">EARLY BIRD</h4></div>
+                <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
+                  <h5 style="color: darkgrey;"><span style="font-size: 1vw;">IDR </span>149.900</h5>
+                  <p style="font-size: 1vw;color: darkgrey">Terjual Habis!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card text-center card-main"> 
+                <div class="card-header bg-secondary p-2"><h4 style="color: darkgrey;">PRESALE-1</h4></div>
+                <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
+                  <h5 style="color: darkgrey;"><span style="font-size: 1vw;">IDR </span>749.900</h5>
+                  <p style="font-size: 1vw; color: darkgrey;">Terjual Habis!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card text-center card-main"> 
+                <div class="card-header p-2" style="background-color: #6058B8;"><h4 style="color: azure;">PRESALE-2</h4></div>
+                <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
+                  <h5><span style="font-size: 1vw;">IDR </span>209.900</h5>
+                  <p style="font-size: 1vw;">Available Sabtu, 2 Maret 2024, 16.00 WIB</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card text-center card-main"> 
+                <div class="card-header p-2" style="background-color: #6058B8;"><h4 style="color: azure;">PRESALE-3</h4></div>
+                <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
+                  <h5><span style="font-size: 1vw;">IDR </span>249.900</h5>
+                  <p style="font-size: 1vw;">Available Sabtu, 2 Maret 2024, 16.00 WIB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h3>EARLY BIRD - <s style="color:red">149.900</s> (SOLD OUT)</h3>
         <h3>PRESALE 1 - <s style="color:red">749.900</s> (SOLD OUT)</h3>
         <h3>PRESALE 2 - 209.900</h3>
         <p>Tiket Presale 2 akan tersedia pada Sabtu, 2 Maret 2024 - 16.00 WIB</p>
         <h3>PRESALE 3 - 249.900</h3>
-        <p>Tiket Presale 2 akan tersedia pada Minggu, 3 Maret 2024 - 16.00 WIB</p>
+        <p>Tiket Presale 2 akan tersedia pada Minggu, 3 Maret 2024 - 16.00 WIB</p> -->
         <!-- <div class="text-center ticket">
                   <button type="button" class="btn" id="buyticket" style="margin: 15px 0;" 
                   ><span style="color: rgb(22,22,22);">Buy
@@ -191,20 +220,30 @@
           </div>
           <div class="container">
             <div class="row justify-content-between">
-              <div class="col-md-3 col-sm-6 galeri">
+              <div class="col-lg-3 col-sm-6 galeri">
                 <div class="card text-center nostalgia"
                   onclick="window.open('https://drive.google.com/drive/folders/1zwXxebWwrropBC_8SlH39StdB_xQfWIF?usp=drive_link','_blank');">
                   <img src="img/gallery/vol1.jpeg" class="card-img-top" alt="SOD 2">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">SOD VOL. 1</h5>
+                    <p class="card-text">Jatim EXPO, Surabaya</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 galeri">
+                <div class="card text-center nostalgia"
+                  onclick="window.open('https://drive.google.com/drive/folders/1zwXxebWwrropBC_8SlH39StdB_xQfWIF?usp=drive_link','_blank');">
+                  <img src="img/gallery/vol2.jpeg" class="card-img-top" alt="SOD 2">
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">SOD VOL. 2</h5>
                     <p class="card-text">Jatim EXPO, Surabaya</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 galeri">
+              <div class="col-lg-3 col-sm-6 galeri">
                 <div class="card text-center nostalgia"
                   onclick="window.open('https://drive.google.com/drive/folders/1D5ZGs1nECKr1t14qXGdU97Vy31Jkbwct?usp=drive_link','_blank');">
-                  <img src="img/gallery/Thumbnail-SOD-3.jpg" class="card-img-top" alt="SOD 3">
+                  <img src="img/gallery/vol3.jpeg" class="card-img-top" alt="SOD 3">
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">SOD VOL. 3</h5>
                     <p class="card-text">Lapangan Karangpilang, Surabaya</p>
@@ -213,30 +252,30 @@
               </div>
             </div>
             <div class="row justify-content-between">
-              <div class="col-md-3 col-sm-6 galeri">
+              <div class="col-lg-3 col-sm-6 galeri">
                 <div class="card text-center nostalgia"
                   onclick="window.open('https://drive.google.com/drive/folders/1o-To543KJ2dbfRJsvT5mpEkqAb1AF-IH?usp=drive_link','_blank');">
-                  <img src="img/gallery/Thumbnail-SOD-4.jpg" class="card-img-top" alt="SOD 4">
+                  <img src="img/gallery/vol4.jpeg" class="card-img-top" alt="SOD 4">
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">SOD VOL. 4</h5>
                     <p class="card-text">Lapangan PRPP, Surabaya</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 galeri">
-                <div class="card text-center nostalgia" style="width: 18rem; cursor: pointer;"
+              <div class="col-lg-3 col-sm-6 galeri">
+                <div class="card text-center nostalgia"
                   onclick="window.open('https://drive.google.com/drive/folders/1PQod4ZmgseQqHn3OtDJYycHjrafF7gBE?usp=drive_link','_blank');">
-                  <img src="img/gallery/Thumbnail-Buku-Tahunan.jpeg" class="card-img-top" alt="Buku Tahunan">
+                  <img src="img/gallery/bts.png" class="card-img-top" alt="Buku Tahunan">
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">BUKU TAHUNAN SOD</h5>
                     <p class="card-text">Tahun 2023</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 galeri">
+              <div class="col-lg-3 col-sm-6 galeri">
                 <div class="card text-center nostalgia"
                   onclick="window.open('https://drive.google.com/drive/folders/1AgHW7kHX2xezxKtcrjd4djqBruc-i9kO?usp=drive_link','_blank');">
-                  <img src="img/gallery/Thumbnail-SOD-5.jpg" class="card-img-top" alt="SOD 5">
+                  <img src="img/gallery/vol5.jpeg" class="card-img-top" alt="SOD 5">
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">SOD VOL.5</h5>
                     <p class="card-text">Lapangan Karangpilang, Surabaya</p>
