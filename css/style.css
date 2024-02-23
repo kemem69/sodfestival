@@ -234,6 +234,10 @@ h5 {
   vertical-align: middle;
 }
 
+#promoter p {
+  font-size: small;
+}
+
 #header #logo h1 a,
 #header #logo h1 a:hover {
   color: #DDE6ED;
