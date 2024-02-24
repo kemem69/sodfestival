@@ -1669,6 +1669,10 @@ hr.solid {
   #schedule .nav-tabs a {
     padding: 8px 30px;
   }
+
+  .section-header h2 {
+    font-size: 20px !important;
+  }
 }
 
 @media (max-width: 460px) {
