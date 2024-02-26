@@ -672,12 +672,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: black;
 }
 
-#about p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: black;
-}
-
 .youtube-video-container {
   position: relative;
   overflow: hidden;
@@ -1614,6 +1608,30 @@ hr.solid {
   #schedule .nav-tabs a {
     padding: 8px 60px;
   }
+
+  .ticket-available {
+    font-size: 2vw !important;
+  }
+
+  .ticket-card h4 {
+    font-size: 2vw !important;
+  }
+  
+  .ticket-card h5 {
+    font-size: 3vw !important;
+  }
+  
+  .ticket-card h6 {
+    font-size: 2vw !important;
+  }
+
+  .idr {
+    font-size: 2vw !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1764,4 +1782,13 @@ hr.solid {
 
 .titikkoma {
   margin-top: 10px;
+}
+
+.ticket-available {
+  font-size: 1vw;
+  color: darkgrey;
+}
+
+.idr {
+  font-size: 1vw;
 }
