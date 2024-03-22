@@ -925,6 +925,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 #gallery{
   background-image: url('/img/gallery/vol3.jpeg');
 }
+
+#gallery .card-body {
+  padding: 5px;
+}
+
+#gallery .card-title {
+  margin-bottom: 0;
+}
+
 #venue .venue-info:before {
   content: "";
   background: rgba(8, 0, 73, 0.8);
