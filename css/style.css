@@ -1799,3 +1799,9 @@ hr.solid {
 .idr {
   font-size: 1vw;
 }
+
+#beli-tiket {
+  font-size: 30px;
+  font-family: 'RowdiesBold';
+  margin-bottom: 15px;
+}
