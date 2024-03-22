@@ -166,7 +166,7 @@ h5 {
 }
 
 .section-header h2 {
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -174,8 +174,7 @@ h5 {
   font-family: 'rowdiesBold';
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 3px;
-  text-shadow: 3px 3px black;
+  -webkit-text-stroke-width: 5px;
 }
 
 .section-header p {
@@ -642,7 +641,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background-color: white;
+  background-color: #ffc567;
   color: #DDE6ED;
   padding: 60px 0 40px 0;
   text-align: center;
@@ -658,7 +657,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about h2 {
-  font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
@@ -694,7 +692,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery h2 {
-  font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
@@ -909,7 +906,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue {
   padding: 60px 0;
-  background-color: white;
+  background-color: #fffced;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1032,7 +1029,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #gallery {
-  padding: 60px;
+  padding: 20px;
   overflow: hidden;
 }
 
@@ -1374,13 +1371,13 @@ hr.solid {
 --------------------------------------------------------------*/
 
 #footer {
-  background-color: white;
+  background-color: #fffced;
   padding: 0 0 25px 0;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background-color: white;
+  background-color: #fffced;
   padding: 60px 0 30px 0;
 }
 
@@ -1565,11 +1562,6 @@ hr.solid {
     width: 70%;
   }
   
-  #intro {
-    background: url(../img/bannermob.jpeg) top center;
-    background-size: cover
-  }
-  
   #spotify {
     width: 80%;
   }
@@ -1646,6 +1638,12 @@ hr.solid {
   #faq #faq-list i {
     top: 13px;
   }
+  
+  #intro {
+    background: url(../img/bannermob.jpeg) top center;
+    background-size: cover
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1689,7 +1687,8 @@ hr.solid {
   }
 
   .section-header h2 {
-    font-size: 20px !important;
+    font-size: 30px !important;
+    -webkit-text-stroke-width: 3px;
   }
 }
 
