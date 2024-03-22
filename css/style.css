@@ -1624,6 +1624,11 @@ hr.solid {
   h1, h2, h3, h4, h5, h6, p {
     font-size: 2vw;
   }
+
+  .countDownCol {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1673,6 +1678,10 @@ hr.solid {
   .titikkoma {
     margin-top: 0px !important;
   }
+
+  #timeandplace h3 {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 574px) {
@@ -1720,17 +1729,16 @@ hr.solid {
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   width: max-content;
   margin: auto;
-  border: 3px black solid;
-  box-shadow: 2px 2px black;
+  border: 5px black solid;
 }
 
 #timeandplace h3 {
   font-family: 'rowdiesBold';
   color: white;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 #about-header {
@@ -1751,19 +1759,19 @@ hr.solid {
   border-radius: 10px;
   justify-content: center;
   padding: 20px;
+  background-color: #fffced;
 }
 
 .countdownBox h1 {
   margin: auto;
   font-family: 'rowdiesBold';
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 .countdownBottomBox {
   border: 3px solid black;
   border-radius: 10px;
   background-color: #fd5a47;
-  padding-top: 10px;
   margin-top: 15px;
 }
 
@@ -1771,7 +1779,7 @@ hr.solid {
   margin: auto;
   font-family: 'rowdiesLight';
   font-size: 2vw;
-  margin-bottom: 10px !important;
+  margin-bottom: 5px !important;
 }
 
 .titikkoma p {

@@ -92,11 +92,11 @@
         <div class="section-header" id="about-header">
           <h2>Menuju Sounds of Downtown Festival Vol.6</h2>
         </div>
-        <div id="timeandplace">
+        <div id="timeandplace" style="margin-top: -20px;">
           <h3>3 & 4 Agustus 2024 | Surabaya, Jawa Timur</h3>
         </div>
-        <!-- <div class="row" id="countdownContainer">
-          <div class="col-2">
+        <div class="row" id="countdownContainer">
+          <div class="col-2 countDownCol">
             <div class="countdownBox">
               <h1 id="days"></h1>
             </div>
@@ -107,7 +107,7 @@
           <div class="col-1 titikkoma">
             <p>:</p>
           </div>
-          <div class="col-2">
+          <div class="col-2 countDownCol">
             <div class="countdownBox">
               <h1 id="hours"></h1>
             </div>
@@ -118,7 +118,7 @@
           <div class="col-1 titikkoma">
             <p>:</p>
           </div>
-          <div class="col-2">
+          <div class="col-2 countDownCol">
             <div class="countdownBox">
               <h1 id="minutes"></h1>
             </div>
@@ -129,7 +129,7 @@
           <div class="col-1 titikkoma">
             <p>:</p>
           </div>
-          <div class="col-2">
+          <div class="col-2 countDownCol">
             <div class="countdownBox">
               <h1 id="seconds"></h1>
             </div>
@@ -137,7 +137,7 @@
               <p class="countdownMap">Seconds</p>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
       <div>
         <div class="container mt-5">
@@ -400,7 +400,7 @@
     });
   </script>
   <script>
-    var countDownDate = new Date("May 3, 2024 09:00:00").getTime();
+    var countDownDate = new Date("Aug 3, 2024 09:00:00").getTime();
     var down = setInterval(function () {
       var now = new Date().getTime();
       var distance = countDownDate - now;
