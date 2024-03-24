@@ -150,7 +150,7 @@
                 </div>
                 <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
                   <h5 style="color: darkgrey;"><span class="idr">IDR </span>149.900</h5>
-                  <p class="ticket-available">Terjual Habis!</p>
+                  <p class="ticket-available" style="color: darkgrey;">Terjual Habis!</p>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
                   <h5 style="color: darkgrey;"><span class="idr">IDR </span>749.900</h5>
-                  <p class="ticket-available">Terjual Habis!</p>
+                  <p class="ticket-available" style="color: darkgrey;">Terjual Habis!</p>
                 </div>
               </div>
             </div>
@@ -175,6 +175,15 @@
                   <p class="ticket-available">Available Sabtu, 2 Maret 2024, 16.00 WIB</p>
                 </div>
               </div>
+              <!-- <div class="card text-center card-main" style="cursor: pointer;" id="presale2">
+                <div class="card-header p-2" style="background-color: #6058B8;">
+                  <h4 style="color: azure;">PRESALE-2</h4>
+                </div>
+                <div class="card-body p-2" style="height: 100px; max-height: 15vh;">
+                  <h5><span class="idr">IDR </span>209.900</h5>
+                  <p class="ticket-available">Available Sabtu, 2 Maret 2024, 16.00 WIB</p>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -281,11 +290,12 @@
         <div style="text-align: center;">
           <div style="background-color: #FFC567; padding: 10px; border-radius: 5px;">
             <p>Sounds of Downtown Festival (SOD Festival) adalah sebuah festival musik tahunan di Surabaya</p>
-              <p>yang diselenggarakan oleh SOD Group. Menjelang penyelenggaraan yang ke-6 pada 3 & 4 Agustus</p>
-              <p>2024, kami memiliki visi untuk menjadikan SOD Festival Vol.6 sebagai</p> 
-              <p style="font-weight: bolder; font-family: rowdiesRegular, sans-serif;">“Festival Musik Untuk Semua Warga Jawa Timur”</p><br>
-            <p>Selain menyelenggarakan SOD Festival, saat ini SOD Group juga sedang membangun</p> 
-              <p>sebuah ekosistem di industri kreatif & pertunjukan melalui beberapa brand lain yang kami miliki</p>
+            <p>yang diselenggarakan oleh SOD Group. Menjelang penyelenggaraan yang ke-6 pada 3 & 4 Agustus</p>
+            <p>2024, kami memiliki visi untuk menjadikan SOD Festival Vol.6 sebagai</p>
+            <p style="font-weight: bolder; font-family: rowdiesRegular, sans-serif;">“Festival Musik Untuk Semua Warga
+              Jawa Timur”</p><br>
+            <p>Selain menyelenggarakan SOD Festival, saat ini SOD Group juga sedang membangun</p>
+            <p>sebuah ekosistem di industri kreatif & pertunjukan melalui beberapa brand lain yang kami miliki</p>
           </div>
           <div class="row justify-content-around logo-promoter" style="margin-top: 40px;">
             <img class="logo" src="img/logo/SODGROUP/sodWhite.png" alt="SOD Group" title="">
@@ -420,6 +430,12 @@
       document.getElementById("minutes").innerHTML = minutes;
       document.getElementById("seconds").innerHTML = seconds;
     }, 1000);
+  </script>
+
+  <script type="text/javascript">
+    document.getElementById("presale2").onclick = function () {
+      window.open("https://youtube.com", "_blank");
+    };
   </script>
 </body>
 
