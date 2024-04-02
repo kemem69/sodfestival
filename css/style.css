@@ -922,8 +922,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   min-height: 300px;
 }
 
+#promoter {
+  background-image: url('/img/backgroundKotakUngu.png');
+}
+
 #gallery{
-  background-image: url('/img/gallery/vol3.jpeg');
+  background-image: url('/img/backgroundPhoto.png');
 }
 
 #gallery .card-body {
