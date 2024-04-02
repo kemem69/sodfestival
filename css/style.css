@@ -59,16 +59,17 @@ p {
 
 .ticket-card h4 {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
+  margin-bottom: 0;
   padding: 0;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 .ticket-card h5 {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
   padding: 0;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .ticket-card h6 {
@@ -167,6 +168,8 @@ h5 {
   font-weight: 700;
   margin-bottom: 10px;
   font-family: 'rowdiesBold';
+  color: #fffced !important;
+  paint-order: stroke fill;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 5px;
@@ -1799,7 +1802,7 @@ hr.solid {
 
 .titikkoma p {
   font-family: 'rowdiesBold';
-  font-size: 3rem !important;
+  font-size: 5vw !important;
 }
 
 .titikkoma {
@@ -1808,11 +1811,11 @@ hr.solid {
 
 .ticket-available {
   font-size: 1vw;
-  color: darkgrey;
+  font-weight: bolder;
 }
 
 .idr {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #beli-tiket {
