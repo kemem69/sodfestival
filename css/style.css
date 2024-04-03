@@ -57,23 +57,34 @@ p {
   border-radius: 8px;
 }
 
+.ticket-card {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+.card {
+  display: inline-block;
+  white-space: normal;
+}
+
 .ticket-card h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "RowdiesRegular";
   font-weight: bolder;
   margin-bottom: 0;
   padding: 0;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .ticket-card h5 {
-  font-family: "Raleway", sans-serif;
+  font-family: "RowdiesRegular";
   font-weight: bolder;
   padding: 0;
-  font-size: 3vw;
+  font-size: 2.7vw;
 }
 
 .ticket-card h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "RowdiesRegular";
   font-weight: 400;
   padding: 0;
   font-size: 1vw;
@@ -172,7 +183,7 @@ h5 {
   paint-order: stroke fill;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-width: 10px;
 }
 
 .section-header p {
@@ -1647,6 +1658,10 @@ hr.solid {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
+  #about .card-body {
+    margin-bottom: 100px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1681,7 +1696,7 @@ hr.solid {
     padding-right: 0 !important;
   }
 
-  .countdownBox h1 {
+  .countdownBox h2 {
     font-size: 2vw;
   }
   
@@ -1706,6 +1721,14 @@ hr.solid {
   #venue .venue-info h3 {
     font-size: 24px;
   }
+
+  .ticket-card {
+    padding-left: 10vw;
+  }
+
+  #about .card-body {
+    margin-bottom: 10px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1715,7 +1738,7 @@ hr.solid {
 
   .section-header h2 {
     font-size: 30px !important;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 8px;
   }
 }
 
@@ -1780,7 +1803,7 @@ hr.solid {
   background-color: #fffced;
 }
 
-.countdownBox h1 {
+.countdownBox h2 {
   margin: auto;
   font-family: 'rowdiesBold';
   font-size: 5vw;
@@ -1822,4 +1845,10 @@ hr.solid {
   font-size: 30px;
   font-family: 'RowdiesBold';
   margin-bottom: 15px;
+}
+
+#about .card-body {
+  height: 100px;
+  max-height: 30vh;
+  margin-bottom: 10px;
 }
