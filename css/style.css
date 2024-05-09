@@ -946,6 +946,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .card-title {
   margin-bottom: 0;
+  background: none;
+  font-weight: bolder;
+  color: #DDE6ED;
 }
 
 #venue .venue-info:before {
@@ -1198,8 +1201,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   cursor: pointer;
   border-radius: 5px;
-  border: #000 solid 3px;
-  box-shadow: rgb(0, 0, 0) 2px 2px;
+  background: none !important;
 }
 
 .logo {
@@ -1232,7 +1234,6 @@ hr.solid {
   border-top: 1px solid #bbb;
   margin: 0 50px;
 }
-
 
 #buy-tickets .card .card-title {
   margin: 10px 0;
@@ -1753,6 +1754,8 @@ hr.solid {
 
 .card-img-top {
   width: 100%;
+  border: #000 solid 3px;
+  box-shadow: rgb(0, 0, 0) 2px 2px;
 }
 
 #timeandplace {
@@ -1783,14 +1786,16 @@ hr.solid {
 
 #countdownContainer {
   justify-content: center;
-  margin-top: 30px;
+  background-color: #fffced;
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  padding: 20px;
 }
 
 .countdownBox {
-  border: 3px solid black;
   border-radius: 10px;
   justify-content: center;
-  padding: 20px;
   background-color: #fffced;
 }
 
@@ -1801,10 +1806,8 @@ hr.solid {
 }
 
 .countdownBottomBox {
-  border: 3px solid black;
-  border-radius: 10px;
-  background-color: #fd5a47;
-  margin-top: 15px;
+  color: black;
+  font-weight: bolder;
 }
 
 .countdownBottomBox p {
@@ -1835,11 +1838,11 @@ hr.solid {
 #beli-tiket {
   font-size: 30px;
   font-family: 'RowdiesBold';
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 #about .card-body {
-  height: 100px;
   max-height: 30vh;
   margin-bottom: 10px;
 }
@@ -1856,4 +1859,24 @@ hr.solid {
       flex: 0 0 50%;
       max-width: 50%;
   }
+}
+
+.beli-tiket {
+  border: 3px solid black;
+  border-radius: 10px;
+  color: azure;
+  background-color: #6058B8;
+  padding: 5px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.beli-tiket-greyed {
+  border: 3px solid black;
+  border-radius: 10px;
+  color: darkgrey;
+  background-color: #6c757d;
+  padding: 5px;
+  width: 90%;
+  cursor: not-allowed;
 }
