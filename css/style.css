@@ -182,9 +182,6 @@ h5 {
   font-family: 'rowdiesBold';
   color: #fffced !important;
   paint-order: stroke fill;
-  -webkit-text-fill-color: #fffced;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 10px;
 }
 
 .section-header p {
@@ -920,7 +917,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue {
   padding: 60px 0;
-  background-color: #fffced;
+  background-color: #009a5e;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -936,11 +933,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #promoter {
-  background-image: url('/img/backgroundKotakUngu.png');
+  background-color: #5196fe;
 }
 
 #gallery {
-  background-image: url('/img/backgroundPhoto.png');
+  background-image: url('/img/bgfestival.jfif');
 }
 
 #gallery .card-body {
@@ -1732,7 +1729,6 @@ hr.solid {
 
   .section-header h2 {
     font-size: 30px !important;
-    -webkit-text-stroke-width: 8px;
   }
 }
 
@@ -1760,20 +1756,21 @@ hr.solid {
 }
 
 #timeandplace {
-  background-color: #009a5e;
+  background-color: #fe564f;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 0px;
   width: max-content;
   margin: auto;
-  border: 5px black solid;
+  border: 3px black solid;
+  border-radius: 5pxo;
 }
 
 #timeandplace h3 {
   font-family: 'rowdiesBold';
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #about-header {
