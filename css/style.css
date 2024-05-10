@@ -241,7 +241,7 @@ h5 {
 }
 
 #promoter p {
-  font-size: larger;
+  font-size: 1.5vw;
   font-family: 'rowdiesLight', sans-serif;
   margin-bottom: 0;
 }
@@ -1205,7 +1205,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .logo {
-  max-width: 100px;
+  width: 100px;
   height: auto;
   margin: auto;
 }
