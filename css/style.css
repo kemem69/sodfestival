@@ -162,7 +162,7 @@ h5 {
   padding-bottom: 20px;
 }
 
-.section-header::before {
+/* .section-header::before {
   content: '';
   position: absolute;
   display: block;
@@ -171,7 +171,7 @@ h5 {
   background: #f82249;
   bottom: 0;
   left: calc(50% - 25px);
-}
+} */
 
 .section-header h2 {
   font-size: 50px;
@@ -197,10 +197,6 @@ h5 {
   padding: 0;
   margin: 0;
   font-size: small;
-}
-
-.section-with-bg {
-  background-color: rgb(176, 176, 176);
 }
 
 /*--------------------------------------------------------------
@@ -1056,6 +1052,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #gallery {
+  padding-top: 60px !important;
   padding: 20px;
   overflow: hidden;
 }
@@ -1631,6 +1628,14 @@ hr.solid {
   .ticket-available {
     font-size: 2vw !important;
   }
+  
+  .beli-tiket {
+    font-size: 2vw !important;
+  }
+
+  .beli-tiket-greyed {
+    font-size: 2vw !important;
+  }
 
   .ticket-card h4 {
     font-size: 2vw !important;
@@ -1879,4 +1884,11 @@ hr.solid {
   padding: 5px;
   width: 90%;
   cursor: not-allowed;
+}
+
+@media (max-width: 475px) {
+  #countdownContainer {
+    max-width: 95%;
+    padding: 10px;
+  }
 }
