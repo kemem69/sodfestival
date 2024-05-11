@@ -1931,3 +1931,9 @@ hr.solid {
     left: 30%;
   }
 }
+
+@media (max-width: 424px) {
+  .static-button {
+    font-size: 3vw;
+  }
+}
