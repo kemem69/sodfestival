@@ -932,10 +932,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #5196fe;
 }
 
-#gallery {
-  background-image: url('/img/bgfestival.jfif');
-}
-
 #gallery .card-body {
   padding: 5px;
 }
@@ -1055,6 +1051,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 60px !important;
   padding: 20px;
   overflow: hidden;
+  padding-bottom: 40px;
+  background-image: url('/img/bgfestival.jfif');
 }
 
 #gallery .owl-nav,
@@ -1202,7 +1200,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .logo {
-  width: 100px;
+  width: 8%;
   height: auto;
   margin: auto;
 }
@@ -1667,6 +1665,10 @@ hr.solid {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
+  .nostalgia-caption {
+    font-size: 3vw !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1685,6 +1687,10 @@ hr.solid {
   #intro {
     background: url(../img/bannermob.jpeg) top center;
     background-size: cover
+  }
+
+  .logo {
+    width: 18%;
   }
 
 }
@@ -1891,4 +1897,8 @@ hr.solid {
     max-width: 95%;
     padding: 10px;
   }
+}
+
+.nostalgia-caption {
+  font-size: 1.5vw;
 }
