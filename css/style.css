@@ -49,11 +49,11 @@ p {
 }
 
 .card-header {
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
 }
 
 .card-main {
-  border: 4px solid black;
+  border: 3px solid black;
   border-radius: 8px;
   width: 100%;
 }
@@ -1693,6 +1693,10 @@ hr.solid {
     width: 18%;
   }
 
+  #promoter {
+    display: none;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1702,13 +1706,16 @@ hr.solid {
 
   .countdownBox {
     padding-top: 10px !important;
-    padding-bottom: 10px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
   .countdownBox h2 {
-    font-size: 2vw;
+    font-size: 7vw !important;
+  }
+
+  .titikkoma p {
+    font-size: 7vw !important;
   }
 
   .countdownBottomBox {
@@ -1830,7 +1837,7 @@ hr.solid {
 
 .titikkoma p {
   font-family: 'rowdiesBold';
-  font-size: 5vw !important;
+  font-size: 5vw;
 }
 
 .titikkoma {
@@ -1901,4 +1908,26 @@ hr.solid {
 
 .nostalgia-caption {
   font-size: 1.5vw;
+}
+
+.static-button {
+  position: fixed;
+  bottom: 10%;
+  right: 40%;
+  left: 40%;
+  background-color: #009a5e;
+  color: whitesmoke;
+  z-index: 999;
+  border-radius: 5px;
+  height: 40px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media (max-width: 830px) {
+  .static-button {
+    bottom: 5%;
+    right: 30%;
+    left: 30%;
+  }
 }
