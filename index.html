@@ -90,7 +90,7 @@
 
   <main id="main">
     <section id="about">
-      <button class="static-button">TIKET SOD VOL.6!</button>
+      <button id="buyticket" class="static-button">TIKET SOD VOL.6!</button>
       <div class="container">
         <div class="section-header" id="about-header">
           <h2 style="color: black !important;">Menuju Sounds of Downtown Festival Vol.6</h2>
@@ -193,7 +193,7 @@
                 <div class="card-body p-2" style="max-height: 50vh; margin-bottom: 10px;">
                   <h5>Coming Soon!</h5>
                   <p class="ticket-available" style="color: white;">x</p>
-                  <button class="beli-tiket">BELI TIKET</button>
+                  <button id="presale3" class="beli-tiket">BELI TIKET</button>
                 </div>
               </div>
             </div>
@@ -395,7 +395,11 @@
   <script type="text/javascript">
     $('#buyticket').click(function () {
       fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
-      location.href = 'https://widget.loket.com/widget/yho1uzg57mjhrpj2p';
+      location.href = 'https://www.tiket.com/to-do/sound-of-downtown-vol6?lang=id';
+    });
+    $('#presale3').click(function () {
+      fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
+      location.href = 'https://www.tiket.com/to-do/sound-of-downtown-vol6?lang=id';
     });
   </script>
   <script>
