@@ -75,7 +75,7 @@
             <li><a href="#about">Tickets</a></li>
             <li><a href="#venue">Guest Star</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#promoter">Promotor</a></li>
+            <li id="promotorlink"><a href="#promoter">Promotor</a></li>
             <li><a href="#footer">Contact Us</a></li>
           </ul>
         </nav>
@@ -90,6 +90,7 @@
 
   <main id="main">
     <section id="about">
+      <button id="buyticket" class="static-button">TIKET SOD VOL.6!</button>
       <div class="container">
         <div class="section-header" id="about-header">
           <h2 style="color: black !important;">Menuju Sounds of Downtown Festival Vol.6</h2>
@@ -190,9 +191,9 @@
                   <h4 style="color: azure;">PRESALE-3</h4>
                 </div>
                 <div class="card-body p-2" style="max-height: 50vh; margin-bottom: 10px;">
-                  <h5><span class="idr">IDR </span>249.900</h5>
-                  <p class="ticket-available">Coming Soon!</p>
-                  <button class="beli-tiket">BELI TIKET</button>
+                  <h5>Coming Soon!</h5>
+                  <p class="ticket-available" style="color: white;">x</p>
+                  <button id="presale3" class="beli-tiket">BELI TIKET</button>
                 </div>
               </div>
             </div>
@@ -223,7 +224,7 @@
     <section id="gallery" class="wow fadeInUp">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 section-header" style="text-align: center;">
+          <div class="col-lg-12 section-header" style="text-align: center; margin-bottom: 0;">
             <h2>MARI BERNOSTALGIA!</h2>
           </div>
           <div class="container gallery">
@@ -233,7 +234,7 @@
                   onclick="window.open('https://drive.google.com/drive/folders/1zwXxebWwrropBC_8SlH39StdB_xQfWIF?usp=drive_link','_blank');">
                   <img src="img/gallery/Vol 2.jpeg" class="card-img-top" alt="SOD 2">
                   <div class="card-body">
-                    <h5 style="font-size: 1.5vw;" class="mt-2 card-title font-weight-bold">SOD FESTIVAL VOL. 2</h5>
+                    <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 2</h5>
                   </div>
                 </div>
               </div>
@@ -242,36 +243,36 @@
                   onclick="window.open('https://drive.google.com/drive/folders/1D5ZGs1nECKr1t14qXGdU97Vy31Jkbwct?usp=drive_link','_blank');">
                   <img src="img/gallery/Vol 3.jpeg" class="card-img-top" alt="SOD 3">
                   <div class="card-body">
-                    <h5 style="font-size: 1.5vw;" class="mt-2 card-title font-weight-bold">SOD FESTIVAL VOL. 3</h5>
+                    <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 3</h5>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-around mb-4">
+            <div class="row justify-content-sm-center">
               <div class="col-lg-3 col-sm-12 galeri">
                 <div class="card text-center nostalgia"
                   onclick="window.open('https://drive.google.com/drive/folders/1o-To543KJ2dbfRJsvT5mpEkqAb1AF-IH?usp=drive_link','_blank');">
                   <img src="img/gallery/Vol 4 A.jpeg" class="card-img-top" alt="SOD 4">
                   <div class="card-body">
-                    <h5 style="font-size: 1.5vw;" class="mt-2 card-title font-weight-bold">SOD FESTIVAL VOL. 4</h5>
+                    <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 4</h5>
                   </div>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-12 galeri">
                 <div class="card text-center nostalgia"
-                  onclick="window.open('https://drive.google.com/drive/folders/1PQod4ZmgseQqHn3OtDJYycHjrafF7gBE?usp=drive_link','_blank');">
+                onclick="window.open('https://drive.google.com/drive/folders/1AgHW7kHX2xezxKtcrjd4djqBruc-i9kO?usp=drive_link','_blank');">
                   <img src="img/gallery/Vol 5.jpeg" class="card-img-top" alt="SOD 5">
                   <div class="card-body">
-                    <h5 style="font-size: 1.5vw;" class="mt-2 card-title font-weight-bold">SOD FESTIVAL VOL. 5</h5>
+                    <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 5</h5>
                   </div>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-12 galeri">
                 <div class="card text-center nostalgia"
-                  onclick="window.open('https://drive.google.com/drive/folders/1AgHW7kHX2xezxKtcrjd4djqBruc-i9kO?usp=drive_link','_blank');">
+                onclick="window.open('https://drive.google.com/drive/folders/1PQod4ZmgseQqHn3OtDJYycHjrafF7gBE?usp=drive_link','_blank');">
                   <img src="img/gallery/Buku Kenangan.png" class="card-img-top" alt="SOD 5">
                   <div class="card-body">
-                    <h5 style="font-size: 1.5vw;" class="mt-2 card-title font-weight-bold">BUKU TAHUNAN SOD</h5>
+                    <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">BUKU TAHUNAN SOD</h5>
                   </div>
                 </div>
               </div>
@@ -394,7 +395,11 @@
   <script type="text/javascript">
     $('#buyticket').click(function () {
       fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
-      location.href = 'https://widget.loket.com/widget/yho1uzg57mjhrpj2p';
+      location.href = 'https://www.tiket.com/to-do/sound-of-downtown-vol6?lang=id';
+    });
+    $('#presale3').click(function () {
+      fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
+      location.href = 'https://www.tiket.com/to-do/sound-of-downtown-vol6?lang=id';
     });
   </script>
   <script>
