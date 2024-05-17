@@ -1933,7 +1933,7 @@ hr.solid {
 
 .static-button {
   position: fixed;
-  bottom: 40%;
+  bottom: 10%;
   right: 40%;
   left: 40%;
   background-color: #009a5e;
