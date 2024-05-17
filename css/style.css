@@ -1755,20 +1755,20 @@ hr.solid {
   }
 
   .card-header {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
 
   .card-main {
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   .beli-tiket {
-    border: 2px solid black !important;
+    border: 1px solid black !important;
     font-size: 5vw !important;
   }
 
   .beli-tiket-greyed {
-    border: 2px solid black !important;
+    border: 1px solid black !important;
     font-size: 5vw !important;
   }
 }
