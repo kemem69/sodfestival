@@ -1640,7 +1640,7 @@ hr.solid {
   }
 
   .ticket-card h5 {
-    font-size: 4vw !important;
+    font-size: 5vw !important;
   }
 
   .ticket-card h6 {
@@ -1750,8 +1750,26 @@ hr.solid {
     padding: 8px 30px;
   }
 
-  .section-header h2 {
-    font-size: 30px !important;
+  .card-header h4 {
+    font-size: 5vw !important;
+  }
+
+  .card-header {
+    border-bottom: 2px solid black;
+  }
+
+  .card-main {
+    border: 2px solid black;
+  }
+
+  .beli-tiket {
+    border: 2px solid black !important;
+    font-size: 5vw !important;
+  }
+
+  .beli-tiket-greyed {
+    border: 2px solid black !important;
+    font-size: 5vw !important;
   }
 }
 
