@@ -47,7 +47,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -258,7 +258,7 @@
               </div>
               <div class="col-lg-3 col-sm-12 galeri">
                 <div class="card text-center nostalgia"
-                onclick="window.open('https://drive.google.com/drive/folders/1AgHW7kHX2xezxKtcrjd4djqBruc-i9kO?usp=drive_link','_blank');">
+                  onclick="window.open('https://drive.google.com/drive/folders/1AgHW7kHX2xezxKtcrjd4djqBruc-i9kO?usp=drive_link','_blank');">
                   <img src="img/gallery/Vol 5.jpeg" class="card-img-top" alt="SOD 5">
                   <div class="card-body">
                     <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 5</h5>
@@ -267,7 +267,7 @@
               </div>
               <div class="col-lg-3 col-sm-12 galeri">
                 <div class="card text-center nostalgia"
-                onclick="window.open('https://drive.google.com/drive/folders/1PQod4ZmgseQqHn3OtDJYycHjrafF7gBE?usp=drive_link','_blank');">
+                  onclick="window.open('https://drive.google.com/drive/folders/1PQod4ZmgseQqHn3OtDJYycHjrafF7gBE?usp=drive_link','_blank');">
                   <img src="img/gallery/Buku Kenangan.png" class="card-img-top" alt="SOD 5">
                   <div class="card-body">
                     <h5 class="mt-2 card-title font-weight-bold nostalgia-caption">BUKU TAHUNAN SOD</h5>
@@ -433,7 +433,25 @@
       document.getElementById("seconds").innerHTML = seconds;
     }, 1000);
   </script>
-
+  <script>
+    function changeImage() {
+      var element = document.getElementById("intro")
+      var image = window.getComputedStyle(element, false).backgroundImage
+      if (image.includes("img/banner.png")) {
+        element.style.backgroundImage = `url("../img/banner2.png")`;
+      }
+      else if (image.includes("img/banner2.png")) {
+        element.style.backgroundImage = `url("../img/banner.png")`;
+      }
+      else if (image.includes("img/bannermob.png")) {
+        element.style.backgroundImage = `url("../img/bannermob2.png")`;
+      }
+      else if (image.includes("img/bannermob2.png")) {
+        element.style.backgroundImage = `url("../img/bannermob.png")`;
+      }
+    }
+    setInterval(changeImage, 3000);
+  </script>
   <script type="text/javascript">
     document.getElementById("presale2").onclick = function () {
       window.open("https://m.tiket.com/to-do/sound-of-downtown-vol6?lang=id", "_blank");
