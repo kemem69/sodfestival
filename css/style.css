@@ -1671,6 +1671,19 @@ hr.solid {
   }
 }
 
+#volunteer {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/sodvolunteer_lepi.png) top center;
+  background-size: cover;
+  padding-top: 92vh;
+}
+
+#volunteer-btn {
+  border-radius: 10px;
+  border: 2px solid black
+}
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1686,7 +1699,7 @@ hr.solid {
 
   #intro {
     background: url(../img/bannermob.jpeg) top center;
-    background-size: cover
+    background-size: cover;
   }
 
   .logo {
@@ -1699,6 +1712,11 @@ hr.solid {
 
   #promotorlink {
     display: none;
+  }
+  
+  #volunteer {
+    background: url(../img/sodvolunteer_hp.png) center center;
+    background-size: cover;
   }
 
 }
