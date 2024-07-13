@@ -1674,7 +1674,7 @@ hr.solid {
 #volunteer {
   width: 100%;
   height: 100vh;
-  background: url(../img/sodvolunteer_lepi.png) top center;
+  background: url(../img/sodvolunteer_lepi_2.png) top center;
   background-size: cover;
   padding-top: 90vh;
 }
@@ -1715,7 +1715,7 @@ hr.solid {
   }
   
   #volunteer {
-    background: url(../img/sodvolunteer_hp.png) center center;
+    background: url(../img/sodvolunteer_hp_2.png) center center;
     background-size: cover;
     padding-top: 82.5vh;
   }
