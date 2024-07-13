@@ -219,11 +219,13 @@
     <section id="volunteer">
       <div class="row">
         <div class="container justify-content-center" style="display: flex;">
-          <!-- <button id="volunteer-btn" style="cursor: pointer;" onclick="window.open('https://ontheground.id/check-volunteer/120','_blank');"> -->
           <button id="volunteer-btn" style="cursor: pointer;">
             CEK HASIL SELEKSI TIMSOD DI SINI!
           </button>
         </div>
+      </div>
+      <div class="container justify-content-center" style="display: flex">
+        <p style="color: white;">Akan Diumumkan pada 14 Juli 2024 17.00 WIB</p>
       </div>
     </section>
     <section id="venue" class="wow fadeInUp">
@@ -405,13 +407,14 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script>
-    // Get current date and time
     var now = new Date();
     var datetime = now.toLocaleString();
 
     let openDate = new Date('2024-02-02 09:00:00');
-    // Insert date and time into HTML
     document.getElementById("buyticket").disabled = now < openDate;
+
+    let volunteerDate = new Date('2024-07-14 17:00:00');
+    document.getElementById("volunteer-btn").disabled = now < volunteerDate;
   </script>
   <script type="text/javascript">
     $('#buyticket').click(function () {
@@ -421,6 +424,9 @@
     $('#presale3').click(function () {
       fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
       location.href = 'https://www.tiket.com/to-do/sodvol6';
+    });
+    $('#volunteer-btn').click(function () {
+      location.href = 'https://ontheground.id/check-volunteer/120';
     });
   </script>
   <script>
