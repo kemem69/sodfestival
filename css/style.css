@@ -1626,7 +1626,7 @@ hr.solid {
   .ticket-available {
     font-size: 2vw !important;
   }
-  
+
   .beli-tiket {
     font-size: 2vw !important;
   }
@@ -1713,7 +1713,7 @@ hr.solid {
   #promotorlink {
     display: none;
   }
-  
+
   #volunteer {
     background: url(../img/sodvolunteer_hp_2.png) center center;
     background-size: cover;
@@ -1913,9 +1913,9 @@ hr.solid {
 
 @media (max-width: 575px) {
   .smol {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -1964,16 +1964,40 @@ hr.solid {
   cursor: pointer;
 }
 
+.static-button2 {
+  position: fixed;
+  bottom: 17%;
+  right: 40%;
+  left: 40%;
+  background-color: #009a5e;
+  color: whitesmoke;
+  z-index: 999;
+  border-radius: 5px;
+  height: 40px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
 @media (max-width: 830px) {
   .static-button {
     bottom: 5%;
     right: 30%;
     left: 30%;
   }
+
+  .static-button2 {
+    bottom: 12%;
+    right: 25%;
+    left: 25%;
+  }
 }
 
 @media (max-width: 424px) {
   .static-button {
+    font-size: 3vw;
+  }
+
+  .static-button2 {
     font-size: 3vw;
   }
 }

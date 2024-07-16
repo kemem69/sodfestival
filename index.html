@@ -86,8 +86,7 @@
         <nav id="nav-menu-container">
           <ul class="nav-menu">
             <li><a href="#about">Tickets</a></li>
-            <!-- <li><a href="https://goers.co/merchsodvol6" target="_blank">Merchandise</a></li> -->
-            <li><a href="#">Merchandise</a></li>
+            <li><a href="https://goers.co/merchsodvol6" target="_blank">Merchandise</a></li>
             <li><a href="#venue">Guest Star</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="https://drive.google.com/drive/folders/1opPQcYP_Kf6EUpFAMec1l697cjSN4GkX?usp=drive_link"
@@ -107,6 +106,7 @@
 
   <main id="main">
     <section id="about">
+      <button id="merch" class="static-button2">Pre-Order Merchandise</button>
       <button id="buyticket" class="static-button">TIKET SOD VOL.6!</button>
       <div class="container">
         <div class="section-header" id="about-header">
@@ -407,6 +407,10 @@
     document.getElementById("volunteer-btn").disabled = now < volunteerDate;
   </script>
   <script type="text/javascript">
+    $('#merch').click(function () {
+      fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
+      location.href = 'https://goers.co/merchsodvol6';
+    });
     $('#buyticket').click(function () {
       fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
       location.href = 'https://www.tiket.com/to-do/sodvol6';
@@ -461,12 +465,18 @@
         element.style.backgroundImage = `url("../img/banner2.png")`;
       }
       else if (image.includes("img/banner2.png")) {
+        element.style.backgroundImage = `url("../img/banner3.png")`;
+      }
+      else if (image.includes("img/banner3.png")) {
         element.style.backgroundImage = `url("../img/banner.png")`;
       }
       else if (image.includes("img/bannermob.jpeg")) {
         element.style.backgroundImage = `url("../img/bannermob2.jpg")`;
       }
       else if (image.includes("img/bannermob2.jpg")) {
+        element.style.backgroundImage = `url("../img/bannermob3.png")`;
+      }
+      else if (image.includes("img/bannermob3.png")) {
         element.style.backgroundImage = `url("../img/bannermob.jpeg")`;
       }
     }
