@@ -121,7 +121,7 @@
         <div class="row" id="countdownContainer">
           <div class="col-2 countDownCol">
             <div class="countdownBox">
-              <h2 id="days"></h2>
+              <h2 id="days">00</h2>
             </div>
             <div class="countdownBottomBox">
               <p class="countdownMap">DAYS</p>
@@ -132,7 +132,7 @@
           </div>
           <div class="col-2 countDownCol">
             <div class="countdownBox">
-              <h2 id="hours"></h2>
+              <h2 id="hours">00</h2>
             </div>
             <div class="countdownBottomBox">
               <p class="countdownMap">HOURS</p>
@@ -143,7 +143,7 @@
           </div>
           <div class="col-2 countDownCol">
             <div class="countdownBox">
-              <h2 id="minutes"></h2>
+              <h2 id="minutes">00</h2>
             </div>
             <div class="countdownBottomBox">
               <p class="countdownMap">MINUTES</p>
@@ -154,7 +154,7 @@
           </div>
           <div class="col-2 countDownCol">
             <div class="countdownBox">
-              <h2 id="seconds"></h2>
+              <h2 id="seconds">00</h2>
             </div>
             <div class="countdownBottomBox">
               <p class="countdownMap">SECONDS</p>
@@ -204,12 +204,13 @@
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6 smol">
               <div class="card text-center card-main mt-3">
-                <div class="card-header p-2" style="background-color: #6058B8;">
-                  <h4 style="color: azure;">PRESALE TERAKHIR & VIP UPGRADE</h4>
+                <div class="card-header bg-secondary p-2">
+                  <h6 style="color: darkgrey;">PRESALE TERAKHIR & VIP UPGRADE</h6>
                 </div>
                 <div class="card-body p-2" style="max-height: 50vh; margin-bottom: 10px;">
                   <h5 style="color: darkgrey;"><span class="idr">IDR </span>149.900</h5>
-                  <button id="presale3" class="beli-tiket">BELI TIKET</button>
+                  <p class="ticket-available" style="color: darkgrey;">Terjual Habis!</p>
+                  <button disabled class="beli-tiket-greyed">BELI TIKET</button>
                 </div>
               </div>
             </div>
@@ -424,38 +425,38 @@
     });
   </script>
   <script>
-    var countDownDate = new Date("Aug 3, 2024 00:00:00").getTime();
-    var down = setInterval(function () {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      if (Number(days) < 10) {
-        days = "0" + days;
-      }
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      if (Number(hours) < 10) {
-        hours = "0" + hours;
-      }
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      if (Number(minutes) < 10) {
-        minutes = "0" + minutes;
-      }
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      if (Number(seconds) < 10) {
-        seconds = "0" + seconds;
-      }
-      if (distance < 0) {
-        clearInterval(down);
-        document.getElementById("days").innerHTML = 0;
-        document.getElementById("hours").innerHTML = 0;
-        document.getElementById("minutes").innerHTML = 0;
-        document.getElementById("seconds").innerHTML = 0;
-      }
-      document.getElementById("days").innerHTML = days;
-      document.getElementById("hours").innerHTML = hours;
-      document.getElementById("minutes").innerHTML = minutes;
-      document.getElementById("seconds").innerHTML = seconds;
-    }, 1000);
+    // var countDownDate = new Date("Aug 3, 2024 00:00:00").getTime();
+    // var down = setInterval(function () {
+    //   var now = new Date().getTime();
+    //   var distance = countDownDate - now;
+    //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //   if (Number(days) < 10) {
+    //     days = "0" + days;
+    //   }
+    //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //   if (Number(hours) < 10) {
+    //     hours = "0" + hours;
+    //   }
+    //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //   if (Number(minutes) < 10) {
+    //     minutes = "0" + minutes;
+    //   }
+    //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //   if (Number(seconds) < 10) {
+    //     seconds = "0" + seconds;
+    //   }
+    //   if (distance < 0) {
+    //     clearInterval(down);
+    //     document.getElementById("days").innerHTML = 0;
+    //     document.getElementById("hours").innerHTML = 0;
+    //     document.getElementById("minutes").innerHTML = 0;
+    //     document.getElementById("seconds").innerHTML = 0;
+    //   }
+    //   document.getElementById("days").innerHTML = days;
+    //   document.getElementById("hours").innerHTML = hours;
+    //   document.getElementById("minutes").innerHTML = minutes;
+    //   document.getElementById("seconds").innerHTML = seconds;
+    // }, 1000);
   </script>
   <script>
     function changeImage() {
