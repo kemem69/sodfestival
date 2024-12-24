@@ -537,7 +537,7 @@
   #intro {
     width: 100%;
     height: 100vh;
-    background: url(../img/banner.png) top center;
+    background: url(../img/header_pc.png) top center;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -1698,7 +1698,7 @@
     }
   
     #intro {
-      background: url(../img/bannermob.jpeg) top center;
+      background: url(../img/header_phone.png) top center;
       background-size: cover;
     }
   
