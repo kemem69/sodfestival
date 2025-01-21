@@ -456,6 +456,9 @@
     });
   </script>
   <script>
+    document.body.onscroll = function(){
+    document.body.style.backgroundPositionY = window.pageYOffset +"px";
+    };
     var countDownDate = new Date("Aug 1, 2025 10:00:00").getTime();
     var down = setInterval(function () {
       var now = new Date().getTime();
