@@ -147,7 +147,7 @@ h5 {
   padding-top: 6px;
 }
 
-.back-to-top:focus {
+/* .back-to-top:focus {
   background: #e0072f;
   color: #DDE6ED;
   outline: none;
@@ -156,7 +156,7 @@ h5 {
 .back-to-top:hover {
   background: #e0072f;
   color: #DDE6ED;
-}
+} */
 
 /* Sections Header
   --------------------------------*/
