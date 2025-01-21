@@ -1448,6 +1448,14 @@ hr.solid {
   transition: 0.3s;
 }
 
+#footer a {
+  color: #fff
+}
+
+#footer a:hover {
+  color: #fff
+}
+
 #footer .footer-top .social-links a:hover {
   background: #f82249;
   color: #dde6ed;
@@ -1498,10 +1506,6 @@ hr.solid {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
 }
 
 #footer .footer-top .footer-newsletter {
