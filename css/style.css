@@ -1819,8 +1819,14 @@ hr.solid {
   margin-top: 40px;
 }
 
-.card-img-top {
+.ticket-img {
   width: 100%;
+}
+
+.card-img-top {
+  width: 80%;
+  border: 2px solid white;
+  border-radius: 15px;
 }
 
 #timeandplace {
