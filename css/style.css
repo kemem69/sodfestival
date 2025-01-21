@@ -1999,8 +1999,8 @@ hr.solid {
 @media (max-width: 830px) {
   .static-button {
     bottom: 5%;
-    right: 30%;
-    left: 30%;
+    right: 25%;
+    left: 25%;
   }
 
   .static-button2 {
