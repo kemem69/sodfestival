@@ -131,7 +131,7 @@ h5 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #f82249;
+  background: rgb(148,84,236);
   color: #DDE6ED;
   width: 40px;
   height: 40px;
