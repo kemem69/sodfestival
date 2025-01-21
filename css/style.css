@@ -178,7 +178,7 @@ h5 {
   } */
 
 .section-header h2 {
-  font-size: 50px;
+  font-size: 37px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -244,7 +244,7 @@ h5 {
   font-size: 1.5vw;
   font-family: "tommyBold";
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 #header #logo h1 a,
@@ -1712,12 +1712,15 @@ hr.solid {
     width: 18%;
   }
 
-  #promoter {
-    display: none;
+  #promoter p {
+    font-size: 2vw;
+    font-family: "tommyLight";
+    color: white;
+    margin-bottom: 10px;
   }
 
-  #promotorlink {
-    display: none;
+  #about-us-content {
+    max-width: 90%;
   }
 
   #volunteer {
@@ -1917,6 +1920,8 @@ hr.solid {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 15px;
+  margin: auto;
+  max-width: 90%;
   border: 2px solid white;
 }
 
