@@ -1695,6 +1695,34 @@ hr.solid {
   border: 2px solid black;
 }
 
+.static-button {
+  position: fixed;
+  bottom: 10%;
+  right: 40%;
+  left: 40%;
+  background: url(../img/beliTiket.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  border-radius: 20px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.static-button2 {
+  position: fixed;
+  bottom: 17%;
+  right: 40%;
+  left: 40%;
+  background-color: #5196fe;
+  color: whitesmoke;
+  z-index: 999;
+  border-radius: 5px;
+  height: 40px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1737,6 +1765,11 @@ hr.solid {
 
   #about-us-content {
     max-width: 90%;
+  }
+
+  .static-button {
+    border-radius: 15px;
+    height: 37px;
   }
 
   #volunteer {
@@ -1982,33 +2015,7 @@ hr.solid {
   font-size: 1.5vw;
 }
 
-.static-button {
-  position: fixed;
-  bottom: 10%;
-  right: 40%;
-  left: 40%;
-  background: url(../img/beliTiket.png) center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 999;
-  border-radius: 15px;
-  height: 34px;
-  cursor: pointer;
-}
 
-.static-button2 {
-  position: fixed;
-  bottom: 17%;
-  right: 40%;
-  left: 40%;
-  background-color: #5196fe;
-  color: whitesmoke;
-  z-index: 999;
-  border-radius: 5px;
-  height: 40px;
-  border: 2px solid black;
-  cursor: pointer;
-}
 
 @media (max-width: 830px) {
   .static-button {
