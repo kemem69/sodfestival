@@ -171,6 +171,7 @@
           <div class="row justify-content-center ticket-card">
             <div class="col-lg-3 col-sm-6 col-md-6 smol">
               <div class="card text-center card-main mt-3">
+                <a href="https://sodtix.com/event/7">
                 <div class="card-body p-2 row">
                   <div class="col-lg-6 col-sm-6 col-md-6">
                     <img src="img/ticket/EarlyBird.png" class="ticket-img" alt="Early Bird">
@@ -181,6 +182,7 @@
                     <p class="ticket-available" style="color: white;">Available at 24/01/2025 19.00 WIB</p>
                   </div>
                 </div>
+              </a>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6 smol">
@@ -432,7 +434,7 @@
     var now = new Date();
     var datetime = now.toLocaleString();
 
-    let openDate = new Date('2024-02-02 09:00:00');
+    let openDate = new Date('2025-01-22 19:00:00');
     document.getElementById("buyticket").disabled = now < openDate;
   </script>
   <script type="text/javascript">
@@ -442,7 +444,7 @@
     });
     $('#buyticket').click(function () {
       fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
-      location.href = '#';
+      location.href = 'https://sodtix.com/event/7';
     });
     $('#presale3').click(function () {
       fbq('track', 'Purchase', { currency: "IDR", value: 1000000.00 });
