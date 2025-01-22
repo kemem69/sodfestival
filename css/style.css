@@ -586,6 +586,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+.intro-img {
+  width: 70%;
+}
+
 #intro h1 span {
   color: #9db2bf;
 }
@@ -1723,6 +1727,14 @@ hr.solid {
     margin-bottom: 10px;
   }
 
+  #intro .intro-container {
+    top: 0px
+  }
+
+  .intro-img {
+    width: 90%;
+  }
+
   #about-us-content {
     max-width: 90%;
   }
@@ -1813,10 +1825,6 @@ hr.solid {
 
 .btn {
   background-color: #ddd;
-}
-
-.intro-img {
-  width: 70%;
 }
 
 .galeri {
