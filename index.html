@@ -102,10 +102,9 @@
   <section id="intro">
     <div class="intro-container wow fadeIn">
       <picture>
-        <source srcset="img/intro-400.webp" media="(max-width: 400px)" type="image/webp">
-        <source srcset="img/intro-800.webp" media="(max-width: 800px)" type="image/webp">
-        <source srcset="img/intro-1200.webp" media="(max-width: 1200px)" type="image/webp">
-        <img src="img/intro-1200.webp" class="intro-img" alt="intro">
+        <source srcset="img/intro-400.webp" media="(max-width: 400px)" type="image/webp" id="src400">
+        <source srcset="img/intro-800.webp" media="(max-width: 800px)" type="image/webp" id="src800">
+        <img src="img/intro-1200.webp" class="intro-img" alt="intro" id="intro-img">
       </picture>
     </div>
   </section>
@@ -264,7 +263,7 @@
                     <source srcset="img/gallery/sod3img-1200.webp" media="(max-width: 1200px)" type="image/webp">
                     <img src="img/gallery/sod3img-1200.webp" class="card-img-top" alt="SOD 3">
                   </picture>
-                  
+
                   <div class="card-body">
                     <h5 class="mt-2 mb-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 3</h5>
                   </div>
@@ -308,7 +307,7 @@
                     <source srcset="img/gallery/sod6img-800.webp" media="(max-width: 800px)" type="image/webp">
                     <source srcset="img/gallery/sod6img-1200.webp" media="(max-width: 1200px)" type="image/webp">
                     <img src="img/gallery/sod6img-1200.webp" class="card-img-top" alt="SOD 6">
-                  </picture>                  
+                  </picture>
                   <div class="card-body">
                     <h5 class="mt-2 mb-2 card-title font-weight-bold nostalgia-caption">SOD FESTIVAL VOL. 6</h5>
                   </div>
@@ -450,8 +449,8 @@
     });
   </script>
   <script>
-    document.body.onscroll = function(){
-    document.body.style.backgroundPositionY = window.pageYOffset +"px";
+    document.body.onscroll = function () {
+      document.body.style.backgroundPositionY = window.pageYOffset + "px";
     };
     var countDownDate = new Date("Aug 1, 2025 10:00:00").getTime();
     var down = setInterval(function () {
@@ -510,6 +509,21 @@
       }
     }
     // setInterval(changeImage, 3000);
+    function changeIntroImage() {
+      var element = document.getElementById("intro-img")
+      var image = element.src
+      console.log(document.getElementById("src800").srcset)
+      if (image.includes("img/intro-1200.webp")) {
+        element.src = "img/poster-landscape.png";
+        document.getElementById("src800").srcset = "img/poster-vertical.png";
+        document.getElementById("src400").srcset = "img/poster-vertical.png";
+      } else {
+        element.src = "img/intro-1200.webp";
+        document.getElementById("src800").srcset = "img/intro-800.webp";
+        document.getElementById("src400").srcset = "img/intro-400.webp";
+      }
+    }
+    setInterval(changeIntroImage, 3000);
   </script>
 </body>
 
