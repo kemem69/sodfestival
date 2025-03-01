@@ -512,7 +512,6 @@
     function changeIntroImage() {
       var element = document.getElementById("intro-img")
       var image = element.src
-      console.log(document.getElementById("src800").srcset)
       if (image.includes("img/intro-1200.webp")) {
         element.src = "img/poster-landscape.png";
         document.getElementById("src800").srcset = "img/poster-vertical.png";
