@@ -509,10 +509,13 @@
     //   }
     // }
     // setInterval(changeImage, 3000);
+  </script>
+  <script>
     function changeIntroImage() {
-      var element = document.getElementById("intro-img")
-      var image = element.src
-      if (image.includes("img/intro-1200.webp")) {
+      var element = document.getElementById("intro-img");
+      var image = element.src;
+      if
+        (image.includes("img/intro-1200.webp")) {
         element.src = "img/poster-landscape.png";
         document.getElementById("src800").srcset = "img/poster-vertical.png";
         document.getElementById("src400").srcset = "img/poster-vertical.png";
@@ -521,8 +524,7 @@
         document.getElementById("src800").srcset = "img/intro-800.webp";
         document.getElementById("src400").srcset = "img/intro-400.webp";
       }
-    }
-    setInterval(changeIntroImage, 3000);
+    } setInterval(changeIntroImage, 3000);
   </script>
 </body>
 
