@@ -102,9 +102,9 @@
   <section id="intro">
     <div class="intro-container wow fadeIn">
       <picture>
-        <source srcset="img/intro-400.webp" media="(max-width: 400px)" type="image/webp" id="src400">
-        <source srcset="img/intro-800.webp" media="(max-width: 800px)" type="image/webp" id="src800">
-        <img src="img/intro-1200.webp" class="intro-img" alt="intro" id="intro-img">
+        <source srcset="img/poster-vertical-400.webp" media="(max-width: 400px)" type="image/webp" id="src400">
+        <source srcset="img/poster-vertical-800.webp" media="(max-width: 800px)" type="image/webp" id="src800">
+        <img src="img/poster-landscape-1200.webp" class="intro-img" alt="intro" id="intro-img">
       </picture>
     </div>
   </section>
@@ -516,9 +516,9 @@
       var image = element.src;
       if
         (image.includes("img/intro-1200.webp")) {
-        element.src = "img/poster-landscape.png";
-        document.getElementById("src800").srcset = "img/poster-vertical.png";
-        document.getElementById("src400").srcset = "img/poster-vertical.png";
+        element.src = "img/poster-landscape-1200.webp";
+        document.getElementById("src800").srcset = "img/poster-vertical-800.webp";
+        document.getElementById("src400").srcset = "img/poster-vertical-400.webp";
       } else {
         element.src = "img/intro-1200.webp";
         document.getElementById("src800").srcset = "img/intro-800.webp";
