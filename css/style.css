@@ -285,12 +285,12 @@ h5 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -348,11 +348,11 @@ h5 {
   color: #dde6ed;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -365,8 +365,8 @@ h5 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   width: 100%;
 }
@@ -416,7 +416,7 @@ h5 {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   background: #f82249;
   color: #dde6ed;
 }
@@ -559,7 +559,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 90px;
+  top: 50px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,7 +587,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .intro-img {
-  width: 70%;
+  width: 80%;
 }
 
 #intro h1 span {
@@ -1194,6 +1194,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   # Buy Tickets Section
   --------------------------------------------------------------*/
 
+#buyticket {
+  opacity: 0.8;
+}
+
 #buy-tickets {
   padding: 60px 0;
 }
@@ -1559,6 +1563,7 @@ hr.solid {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1756,7 +1761,7 @@ hr.solid {
   }
 
   #intro .intro-container {
-    top: 0px
+    top: 0px;
   }
 
   .intro-img {
