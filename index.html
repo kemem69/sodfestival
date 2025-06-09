@@ -486,43 +486,25 @@
     }, 1000);
   </script>
   <script>
-    // function changeImage() {
-    //   var element = document.getElementById("intro")
-    //   var image = window.getComputedStyle(element, false).backgroundImage
-    //   if (image.includes("img/banner.png")) {
-    //     element.style.backgroundImage = `url("../img/banner2.png")`;
-    //   }
-    //   else if (image.includes("img/banner2.png")) {
-    //     element.style.backgroundImage = `url("../img/banner3.png")`;
-    //   }
-    //   else if (image.includes("img/banner3.png")) {
-    //     element.style.backgroundImage = `url("../img/banner.png")`;
-    //   }
-    //   else if (image.includes("img/bannermob.jpeg")) {
-    //     element.style.backgroundImage = `url("../img/bannermob2.png")`;
-    //   }
-    //   else if (image.includes("img/bannermob2.png")) {
-    //     element.style.backgroundImage = `url("../img/bannermob3.png")`;
-    //   }
-    //   else if (image.includes("img/bannermob3.png")) {
-    //     element.style.backgroundImage = `url("../img/bannermob.jpeg")`;
-    //   }
-    // }
-    // setInterval(changeImage, 3000);
-  </script>
-  <script>
     function changeIntroImage() {
       var element = document.getElementById("intro-img");
       var image = element.src;
-      if
-        (image.includes("img/intro-1200.webp")) {
+      if (image.includes("img/intro-1200.webp")) {
+        console.log("Changing to poster-landscape-1200.webp");
         element.src = "img/poster-landscape-1200.webp";
         document.getElementById("src800").srcset = "img/poster-vertical-800.webp";
         document.getElementById("src400").srcset = "img/poster-vertical-400.webp";
+        if (window.innerWidth >= 1000) {
+          element.style.width = "80vw";
+        }
       } else {
+        console.log("else");
         element.src = "img/intro-1200.webp";
         document.getElementById("src800").srcset = "img/intro-800.webp";
         document.getElementById("src400").srcset = "img/intro-400.webp";
+        if (window.innerWidth >= 1000) {
+          element.style.width = "50vw";
+        }
       }
     }
     setInterval(changeIntroImage, 3000);
