@@ -104,7 +104,7 @@
       <picture>
         <source srcset="img/poster-vertical-400.webp" media="(max-width: 400px)" type="image/webp" id="src400">
         <source srcset="img/poster-vertical-800.webp" media="(max-width: 800px)" type="image/webp" id="src800">
-        <img src="img/poster-landscape-1200.webp" class="intro-img" alt="intro" id="intro-img">
+        <img src="img/intro-1200.webp" class="intro-img" alt="intro" id="intro-img">
       </picture>
     </div>
   </section>
@@ -482,17 +482,24 @@
     function changeIntroImage() {
       var element = document.getElementById("intro-img");
       var image = element.src;
-      if (!image.includes("img/intro-1200.webp")) {
+      if (image.includes("img/poster2-landscape-1200.webp")) {
         element.src = "img/intro-1200.webp";
         document.getElementById("src800").srcset = "img/intro-800.webp";
         document.getElementById("src400").srcset = "img/intro-400.webp";
         if (window.innerWidth >= 1000) {
           element.style.width = "50vw";
         }
-      } else {
+      } else if (image.includes("img/intro-1200.webp")) {
         element.src = "img/poster-landscape-1200.webp";
         document.getElementById("src800").srcset = "img/poster-vertical-800.webp";
         document.getElementById("src400").srcset = "img/poster-vertical-400.webp";
+        if (window.innerWidth >= 1000) {
+          element.style.width = "80vw";
+        }
+      } else if (image.includes("img/poster-landscape-1200.webp")) {
+        element.src = "img/poster2-landscape-1200.webp";
+        document.getElementById("src800").srcset = "img/poster2-vertical-800.webp";
+        document.getElementById("src400").srcset = "img/poster2-vertical-400.webp";
         if (window.innerWidth >= 1000) {
           element.style.width = "80vw";
         }
