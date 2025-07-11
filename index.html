@@ -83,6 +83,9 @@
       <div id="logo" class="pull-left">
         <a href="#intro" class="scrollto"><img id="sodfestivalheader" src="img/logo/SODFestival/sodWhite.png"
             alt="SOD Festival"></a>
+        <button id="mobile-nav-toggle" aria-label="Toggle navigation" style="display:none; background:none; border:none; font-size:2rem; margin-left:10px; vertical-align:middle;">
+          &#9776;
+        </button>
         <nav id="nav-menu-container">
           <ul class="nav-menu">
             <li><a href="#about">Tickets</a></li>
@@ -93,7 +96,7 @@
                 target="_blank">Surat Kuasa</a></li> -->
             <li id="promotorlink"><a href="#promoter">Promotor</a></li>
             <li><a href="#footer">Contact Us</a></li>
-            <li><a href="https://www.ontheground.id/check-volunteer/276" target="_blank">TIMSOD</a></li>
+            <li><a href="#" target="_blank">TIMSOD</a></li>
           </ul>
         </nav>
       </div>
@@ -507,6 +510,30 @@
       }
     }
     setInterval(changeIntroImage, 3000);
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toggler = document.getElementById("mobile-nav-toggle");
+      var navMenu = document.getElementById("nav-menu-container");
+      function checkMobile() {
+        if (window.innerWidth <= 991) {
+          toggler.style.display = "inline-block";
+          navMenu.style.display = "none";
+        } else {
+          toggler.style.display = "none";
+          navMenu.style.display = "block";
+        }
+      }
+      toggler.addEventListener("click", function () {
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+          navMenu.style.display = "block";
+        } else {
+          navMenu.style.display = "none";
+        }
+      });
+      window.addEventListener("resize", checkMobile);
+      checkMobile();
+    });
   </script>
 </body>
 

@@ -1624,7 +1624,12 @@ hr.solid {
   }
 
   #mobile-nav-toggle {
-    display: inline;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    vertical-align: middle;
   }
 
   #intro h1 {
