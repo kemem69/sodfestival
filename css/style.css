@@ -446,6 +446,25 @@ h5 {
   color: #dde6ed;
 }
 
+#mobile-nav-toggle2 {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 15px 15px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle2 i {
+  color: #dde6ed;
+}
+
 /* Mobile Nav Styling */
 
 #mobile-nav {
@@ -529,7 +548,7 @@ body.mobile-nav-active #mobile-nav {
   left: 0;
 }
 
-body.mobile-nav-active #mobile-nav-toggle {
+body.mobile-nav-active #mobile-nav-toggle #mobile-nav-toggle2 {
   color: #dde6ed;
 }
 
@@ -1627,8 +1646,19 @@ hr.solid {
     display: inline-block;
     background: none;
     border: none;
-    cursor: pointer;
+    font-size: 2rem;
     margin-left: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  #mobile-nav-toggle2 {
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin-left: 10px;
+    cursor: pointer;
     vertical-align: middle;
   }
 
