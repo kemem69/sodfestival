@@ -106,8 +106,8 @@
   <section id="intro">
     <div class="intro-container wow fadeIn">
       <picture>
-        <source srcset="img/poster-vertical-400.webp" media="(max-width: 400px)" type="image/webp" id="src400">
-        <source srcset="img/poster-vertical-800.webp" media="(max-width: 800px)" type="image/webp" id="src800">
+        <source srcset="img/poster2-vertical-400.webp" media="(max-width: 400px)" type="image/webp" id="src400">
+        <source srcset="img/poster2-vertical-800.webp" media="(max-width: 800px)" type="image/webp" id="src800">
         <img src="img/intro-1200.webp" class="intro-img" alt="intro" id="intro-img">
       </picture>
     </div>
@@ -494,13 +494,6 @@
           element.style.width = "50vw";
         }
       } else if (image.includes("img/intro-1200.webp")) {
-        element.src = "img/poster-landscape-1200.webp";
-        document.getElementById("src800").srcset = "img/poster-vertical-800.webp";
-        document.getElementById("src400").srcset = "img/poster-vertical-400.webp";
-        if (window.innerWidth >= 1000) {
-          element.style.width = "80vw";
-        }
-      } else if (image.includes("img/poster-landscape-1200.webp")) {
         element.src = "img/poster2-landscape-1200.webp";
         document.getElementById("src800").srcset = "img/poster2-vertical-800.webp";
         document.getElementById("src400").srcset = "img/poster2-vertical-400.webp";
